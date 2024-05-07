@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: PixelExperience-Devices/kernel_xiaomi_sdm845
-  kernel_branch: fourteen
-  device: dipper
-  clang_version: r487747c
+  kernel_repository: https://github.com/HK416AAA/HUAWEI_Kirin990-5G_Kernel
+  kernel_branch: master
+  device: kirin990
+  clang_version: 14
   defconfig: |
-    dipper_defconfig
+    merge_kirin990_defconfig
   kernel_patch: |
     backport-path-umount.patch
   kernelsu_patch: |
